@@ -1,0 +1,11 @@
+MEMORY
+{
+	INES: start =     0, size =   $10, fill=yes, fillval=$00;
+	PRG:  start = $4000, size = $4000, fill=yes, fillval=$00;
+}
+
+SEGMENTS
+{
+	INES:    load = INES, type = ro;
+	PRG:     load = PRG,  type = ro;
+}
